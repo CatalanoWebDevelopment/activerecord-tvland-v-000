@@ -12,11 +12,11 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     self.shows.collect do |show|
-      show_name = show.name
+      s_name = show.name
     end
-    show_name
+    s_name
     self.characters.collect do |character|
-      character_name = character.name
+      c_name = character.name
     end
     character_name
     "#{character_name} - #{show_name}"
