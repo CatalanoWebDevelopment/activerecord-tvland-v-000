@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     binding.pry
   end
-  
+
   def full_name
     first_name = self.first_name
     last_name = self.last_name
