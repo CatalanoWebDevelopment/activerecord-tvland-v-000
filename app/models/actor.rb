@@ -14,7 +14,7 @@ class Actor < ActiveRecord::Base
     binding.pry
     char = self.characters.map do |c|
       c.name
-    end
+    end[0]
 
     show = self.shows.map do |s|
       s.name
