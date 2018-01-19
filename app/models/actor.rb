@@ -18,7 +18,7 @@ class Actor < ActiveRecord::Base
 
     show = self.shows.map do |s|
       s.name
-    end
+    end.to_s
 
     "#{char} - #{show}"
   end
