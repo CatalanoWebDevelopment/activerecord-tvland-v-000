@@ -10,4 +10,7 @@ class Actor < ActiveRecord::Base
     puts "#{first_name} #{last_name}"
   end
 
+  def list_roles
+    binding.pry
+
 end
