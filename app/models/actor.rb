@@ -5,7 +5,7 @@ class Actor < ActiveRecord::Base
   def full_name
     first_name = self.first_name
     last_name = self.last_name
-    puts "#{first_name} #{last_name}"
+    "#{first_name} #{last_name}"
   end
 
   def list_roles
