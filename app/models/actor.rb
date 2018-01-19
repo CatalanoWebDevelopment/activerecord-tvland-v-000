@@ -12,11 +12,11 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     binding.pry
-    char = self.characters.collect do |c|
+    char = self.characters.each do |c|
       c.name
     end
 
-    show = self.shows.collect do |s|
+    show = self.shows.each do |s|
       s.name
     end
 
