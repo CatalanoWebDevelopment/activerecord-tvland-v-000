@@ -19,7 +19,7 @@ class Actor < ActiveRecord::Base
       c_name = character.name
     end
     character_name
-    "#{character_name} - #{show_name}"
+    "#{c_name} - #{s_name}"
   end
 
 end
