@@ -14,11 +14,11 @@ class Actor < ActiveRecord::Base
     self.shows.collect do |show|
       show_name = show.name
     end
-
+    show_name
     self.characters.collect do |character|
       character_name = character.name
     end
-
+    character_name
     "#{character_name} - #{show_name}"
   end
 
