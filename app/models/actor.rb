@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
+    binding.pry
     char = self.characters.map do |c|
       c.name
     end
