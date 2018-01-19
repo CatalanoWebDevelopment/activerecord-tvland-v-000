@@ -1,5 +1,3 @@
-require 'pry'
-
 class Actor < ActiveRecord::Base
   has_many :characters
   has_many :shows, through: :characters
@@ -11,7 +9,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    binding.pry
   end
 
 end
