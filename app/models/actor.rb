@@ -12,6 +12,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     binding.pry
+    self.shows
   end
 
 end
